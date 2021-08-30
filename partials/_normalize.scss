@@ -1,0 +1,26 @@
+*,
+*::before
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+h2{
+    font-size: 4rem;
+    color: darkcyan;
+    text-transform: uppercase;
+}
+
+@mixin flex($direction, $justify, $aling) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+
+}
